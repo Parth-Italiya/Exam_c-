@@ -4,18 +4,33 @@
 using namespace std;
 	
 class A{
-	private:
-		int a,b;
-		
+	
 	 public:
-	 	
 		void set(){
-	
-	
+		
+		cout<<"A"<<endl;
 }
-
 };
-
+class B;public A
+{
+	
+	 public:
+	 	void set(){
+		 
+	 	cout<<"B"<<endl;
+}
+	
+};
+class C: public B, public A
+{
+	
+	 public:
+		void set(){
+		
+	 	cout<<"C"<<endl;
+}
+	
+};
 int main(){
 	
 	
